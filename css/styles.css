@@ -24,7 +24,7 @@ time, mark, audio, video {
 
 /* Navigation Section */
 .top-navigation {
-	background-color: #30C4C9;
+	background-color: black;
 	position: fixed;
 	width: 100%;
 	z-index: 9999;
@@ -72,8 +72,9 @@ time, mark, audio, video {
 
 
 /* Introduction */
+
 .introduction {
-    background-color: #30C4C9;
+    background-color: black;
     background-position-x: 50%;
     background-position-y: 100%;
     background-repeat: no-repeat;
@@ -84,32 +85,36 @@ time, mark, audio, video {
 
 .introduction h3 {
     margin-top: 1.25rem;
-    font-size: 1.563rem;
+    font-size: 1.500rem;
+    margin-left: 5.5em;
+    font-family: lato;
+    letter-spacing: .2rem;
+    color: #605E5E;
+    -webkit-font-smoothing: antialiased;
+
+    
 
 }
 
 .introduction h1 {
-    margin-top: 17.5rem;
-    font-size: 3.125rem;
-    font-family: didact gothic;
-    letter-spacing: .5rem;
+    margin-top: 15.5rem;
+    font-size: 3rem;
+    font-family: lato;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-left: 2.7em;
     -webkit-font-smoothing: antialiased;
 }
 
 .introduction h1, .introduction h3 {
-    color: white;
-    text-align: center;
-    font-weight: 300;
+    color: #6D6B6B;
+    text-align: left;
+    font-weight: ;
+
 }
 
 
-.fa {
-	color: white;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-	margin-top: 1.5rem;
-}
 
 /* About */
 
@@ -128,8 +133,8 @@ time, mark, audio, video {
 }
 
 .about h2 {
-    font-family: ubuntu;
-    color: #0085a1;
+    font-family: lato;
+    color: #3A111C;
     font-size: 2.75rem;
     margin: 1.625rem 0 3.500rem;
     -webkit-font-smoothing: antialiased;
@@ -155,64 +160,179 @@ time, mark, audio, video {
 
 /* Work */
 
-.work {
-    background-color: #fff;
-    overflow: hidden;
-    padding-bottom: 5rem;
-    
-}
-
-.work .content {
-    max-width: 1600px;
-    margin-top: 7.875rem;
-    padding: none;
-    color: #1d1e21;
+h2 {
     text-align: center;
-
-}
-
-.work h2 {
     font-family: ubuntu;
-    color: #0085a1;
+    color: #3A111C;
     font-size: 2.75rem;
     margin: 1.625rem 0 3.500rem;
     -webkit-font-smoothing: antialiased;
 }
 
-.work .devices > li {
-    width: 33.3333333%;
-    float: right;
+h3 {
+    font-family: lato;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #282828;
+}
+ul.rig {
+    list-style: none;
+    font-size: 0px;
+    margin-left: -2.5%;
+}
+ul.rig li {
+    display: inline-block;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-size: 1rem;
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+ul.rig li img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 10px;
+}
+ul.rig li h3 {
+    margin: 0 0 5px;
+}
+ul.rig li p {
+    font-size: .9em;
+    line-height: 1.5em;
+    color: #999;
 }
 
-.work .devices h3 {
-    font-weight: 400;
-    font-size: 1.563rem;
-    margin: 2.5rem 0px 1.875rem;
+ul.rig {
+    list-style: none;
+    font-size: 0px;
+    margin-left: -2.5%; /* should match li left margin */
+}
+ul.rig li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 0 2.5% 2.5%;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-size: 1rem;
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
-.work .devices p{
+/* class for 2 columns */
+ul.rig.columns-2 li {
+    width: 47.5%; /* this value + 2.5 should = 50% */
+}
+/* class for 3 columns */
+ul.rig.columns-3 li {
+    width: 30.83%; /* this value + 2.5 should = 33% */
+}
+/* class for 4 columns */
+ul.rig.columns-4 li {
+    width: 22.5%; /* this value + 2.5 should = 25% */
+}
+
+/* Footer */
+.social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 5.375rem;
+    padding-top: 8.375rem;
+    text-align: center;
+}
+
+.social hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+}
+
+.social .icons > li {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+
+.social .icons > li:hover {
+    cursor: pointer;
+
+}
+
+ .social .github {
+    color: red;
+
+}
+.social .twitter {
+    
+}
+.social .instagram {
+    
+}
+.social .copy {
+    font-size: 0.9rem;
     font-weight: 300;
-    font-size: 1.313rem;
 }
+
+.fa {
+    color: #282828;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+
 
 /* Responsive */
  @media only screen and (max-width: 500px) {
     .top-navigation {
-      padding: 2em 0;
+      padding: .5em 0;
     }
 
-    .introduction {
-      padding: 3em 0;
+    .introduction h1 {
+        font-size: 1.9em;
+        margin-left: 1em;
+        padding-top: 2em;
+    }
+
+.introduction h3 {
+        font-size: 1.4em;
+        margin-left: 1.5em;
+        display: inherit;
+
     }
 
     .about {
       padding: 3em 0;
     }
-
-    .masthead-heading {
-        font-size: 3em;
-    }
+ 
   }
+
+  @media (max-width: 480px) {
+    ul.grid-nav li {
+        display: block;
+        margin: 0 0 5px;
+    }
+    ul.grid-nav li a {
+        display: block;
+    }
+    ul.rig {
+        margin-left: 0;
+    }
+    ul.rig li {
+        width: 100% !important; /* over-ride all li styles */
+        margin: 0 0 20px;
+    }
+}
+
 
 
 
