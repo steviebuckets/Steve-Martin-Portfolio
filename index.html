@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
-<link href='https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Lekton|Monoton|Montserrat|Lato|Didact+Gothic|Ubuntu' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Lato:400,900italic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,900|Roboto" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="icon" type="image/png" href="favicon.ico" />
-	<link href="css/bootstrap.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<link rel="icon" type="image/png" href="favicon.ico" />
+<link href="css/bootstrap.css" rel="stylesheet">
 
 <head>
 	<meta charset="UTF-8">
@@ -13,77 +13,119 @@
 </head>
 
 <!-- Navigation -->
-<body>
-	
-		<nav class ="top-navigation">
-		<div class="content">
-			<ul class ="links">
-				<li><a class="page-scroll" href="#about">About</a>
-				<li><a class="page-scroll" href="#work">Work</a>
-				<li><a href="mailto:steviebuckets33@gmail.com">Email</li></a>
-			</ul>
 
-			<!-- Background Image -->
-		<div class="header">
-		<a class="page-scroll" href="#page-top"><h1>Home</h1></a>
-		</div>
-		</div>
+<body>
+
+	<nav class="top-navigation">
+		<div class="content">
+			<ul class="links">
+				<li><a class="page-scroll" href="#about">About</a>
+					<li><a class="page-scroll" href="#work">Work</a>
+						<li><a href="mailto:steviebuckets33@gmail.com">Contact</li></a>
+			</ul>
 	</nav>
 
-<!-- Introduction -->
-<section id="page-top" class="introduction">
+	<!-- Introduction -->
+	<section id="page-top" class="introduction">
 		<div class="content">
 			<h1>Steve Martín</h1>
-			<h3>Web & Mobile Developer</h3>
+			<h3>Freelance Web & Mobile Developer</h3>
 		</div>
 	</section>
 
 	<!-- About -->
 
-<section id="about" class="about">
+	<section id="about" class="about">
 		<div class="content">
 			<h2>About</h2>
-		
-			<p>I'm Steve Martín, web and mobile developer. Strong knowledge base working with HTML, CSS, Java Script, and Ruby. Mobile experience with Android Studio and Java. Deadline driven and passionate creative.</p>
+
+			<p>I'm Steve Martin, a free lance web developer based in Los Angeles, CA. I'm a full stack developer fluent in Node.js, React, JavaScript, jQuery, HTML & CSS. I've also worked with Ruby and Android Studio.</p>
 			<br>
-			<p>In addition to web/mobile design I have a rich history in audio. Longtime public radio veteran at NPR's largest Southern California affiliate, 89.3 KPCC. Part time record label owner, and long time DJ and radio show host. Avid vinyl collector and lifelong Bulls fan.</p>
-			
-</div>
+			<p>I'm a public radio audio guru by day and a tortued Bulls fan and Blackberry loyalist always! I'm a life long DJ, vinyl collector and former record label owner. I'm a lover of milk shakes, sneakers, playing hoops and mobile technology.</p>
+
+		</div>
 	</section>
+	<div class="grid" id="work" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200}'>
+		<div class="grid-item">
+			<img src="images/podfeed2.png" class="image" />
+			<div class="overlay">
+				<div class="text">
+					<p class="title">Pod Feed</p>
+					<p class="description">
+						A podcast application for the web. Stream, subscribe and search your favorite podcasts.
+					</p>
+					<p class="technology">
+						Built with React, Redux, Node.js, MongoDB, Animate.css, Masonry.
+					</p>
+					<a href="https://github.com/steviebuckets/podfeed"><button type="button" class="btn btn-outline-primary">Repo</button></a>
+					<a href="https://limitless-harbor-20108.herokuapp.com/"><button type="button" class="btn btn-outline-primary">Demo</button></a>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item">
+			<img src="images/onwax.png" class="image" />
+			<div class="overlay-blue">
+				<div class="text">
+					<p class="title">On-Wax</p>
+					<p class="description">
+						A blog for DJ's and record collectors. Upload and share photos of your collection.
+					</p>
+					<p class="technology">
+						Built with JavaScript, jQuery, Node.js, Mongoose.
+					</p>
+					<a href="https://github.com/steviebuckets/on-wax"><button type="button" class="btn btn-outline-primary">Repo</button></a>
+					<a href="https://fierce-journey-96916.herokuapp.com/"><button type="button" class="btn btn-outline-primary">Demo</button></a>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item">
+			<img src="images/action-cookies.png" />
+			<div class="overlay-black">
+				<div class="text">
+					<p class="title">Action Cookies</p>
+					<p class="description">
+						Website design for small business owner in Los Angeles CA. (freelance)
+					</p>
+					<p class="technology">
+						Built with React, and Node.js.
+					</p>
+					<a href="https://github.com/steviebuckets/action-cookies-client"><button type="button" class="btn btn-outline-primary">Repo</button></a>
+					<a href="https://desolate-temple-96682.herokuapp.com/"><button type="button" class="btn btn-outline-primary">Demo</button></a>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item">
+			<img src="images/MSOTC.png" />
+			<div class="overlay-yellow">
+				<div class="text">
+					<p class="title">My Side of The City</p>
+					<p class="description">
+						Website design for my radio show and podcast.
+					</p>
+					<p class="technology">
+						Built with HTML & CSS.
+					</p>
+					<!-- <button type="button" class="btn btn-outline-primary">Repo</button> -->
+					<a href="http://www.mysideofthecity.com/"><button type="button" class="btn btn-outline-primary">Demo</button></a>
+				</div>
+			</div>
+		</div>
 
-	<!-- Work -->
-	<section id="work" class="work">
-	<h2>Work</h2>
-	<ul class="rig columns-2">
-	<li>
-		<a href="http://codepen.io/sbuckets33/full/qZqZao/"><img src="images/about-me.jpg" /></a>
-		<h3>About Me</h3>
-	</li>
-	<li>
-		<a href="https://drive.google.com/file/d/0Bxv0a3lGT-ybZ3dCWUFJaGFaM2c/view"><img src="images/hack-the-times.jpg"/></a>
-		<h3>Hack the Times</h3>
-	</li>
-	<li>
-		<a href="https://steviebuckets.github.io/startup-landing-page-clone/index.html"><img src="images/karma-clone.jpg"/></a>
-		<h3>Karma Landing Page</h3>
-	</li>
-	<li>
-		<a href="http://mysideofthecity.com/"><img src="images/MSOTC.png" /></a>
-		<h3>Blog</h3>
-	</li>
-</ul>
-</section>
+	</div>
 
 
-<!-- Footer-->
-<footer class="social">
+	<!-- Footer-->
+	<footer class="social">
 		<div class="content">
 			<ul class="icons">
 				<li class="github">
 					<a href="https://github.com/steviebuckets"><i class="fa fa-github fa-2x"></i></a>
 				</li>
+				<li class="LinkedIn">
+					<a href="https://www.linkedin.com/in/steve-martin-482113aa/"><i class="fa fa-linkedin fa-2x"></i></a>
+				</li>
 				<li class="twitter">
-					<a href="https://twitter.com/mysideofthecity"><i class="fa fa-twitter fa-2x"></i></a>
+					<a href="https://twitter.com/sbuckets33"><i class="fa fa-twitter fa-2x"></i></a>
 				</li>
 				<li class="instagram">
 					<a href="https://www.instagram.com/sbuckets33/"><i class="fa fa-instagram fa-2x"></i></a>
@@ -91,6 +133,11 @@
 			</ul>
 		</div>
 	</footer>
-	
+
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="/path/to/masonry.pkgd.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 </body>
+
 </html>
