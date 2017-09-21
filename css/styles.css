@@ -104,9 +104,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .about {
   background-color: background-color: #F5F5F5;
-  ;
   overflow: hidden;
   padding-bottom: 5rem;
+}
+
+.profile{
+  border-radius: 50%;
+  margin-bottom: 3rem;
 }
 
 .about .content {
@@ -261,7 +265,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin: 0 auto;
 }
 
-.grid-item img {
+.grid-item .image {
   display: block;
   max-width: 100%;
 }
